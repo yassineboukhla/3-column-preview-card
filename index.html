@@ -11,44 +11,41 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | 3-column preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <main class="container">
-      <div class="container-cols">
-        <h1 class="container-title">Sedans</h1>
-        <p class="container-paragraph">
-          Choose a sedan for its affordability and excellent fuel economy. Ideal
-          for cruising in the city or on your next road trip.
-        </p>
-      </div>
-      <div class="container-cols">
-        <h1 class="container-title">SUVs</h1>
+    <main>
+      <div class="container">
+        <div class="container-cols container-sedans">
+          <img class="container-img" src="/images/icon-sedans.svg" alt="" />
+          <h1 class="container-title">Sedans</h1>
+          <p class="container-paragraph">
+            Choose a sedan for its affordability and excellent fuel economy.
+            Ideal for cruising in the city or on your next road trip.
+          </p>
+          <button class="container-btn container-btn-sedans">Learn More</button>
+        </div>
+        <div class="container-cols container-suvs">
+          <img class="container-img" src="/images/icon-suvs.svg" alt="" />
+          <h1 class="container-title">SUVs</h1>
 
-        <p class="container-paragraph">
-          Take an SUV for its spacious interior, power, and versatility. Perfect
-          for your next family vacation and off-road adventures.
-        </p>
-      </div>
-      <div class="container-cols">
-        <h1 class="container-title">Luxury</h1>
+          <p class="container-paragraph">
+            Take an SUV for its spacious interior, power, and versatility.
+            Perfect for your next family vacation and off-road adventures.
+          </p>
+          <button class="container-btn container-btn-suvs">Learn More</button>
+        </div>
+        <div class="container-cols container-luxury">
+          <img class="container-img" src="/images/icon-luxury.svg" alt="" />
+          <h1 class="container-title">Luxury</h1>
 
-        <p class="container-paragraph">
-          Cruise in the best car brands without the bloated prices. Enjoy the
-          enhanced comfort of a luxury rental and arrive in style.
-        </p>
+          <p class="container-paragraph">
+            Cruise in the best car brands without the bloated prices. Enjoy the
+            enhanced comfort of a luxury rental and arrive in style.
+          </p>
+          <button class="container-btn container-btn-luxury">Learn More</button>
+        </div>
       </div>
     </main>
   </body>

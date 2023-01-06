@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/*  I just earned about flexbox, and will try to use it in this
+    project.
+*/
+main {
+  min-height: 100vh;
+  min-width: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.container-cols {
+  height: 500px;
+  width: 320px;
+  padding: 40px 80px;
+}
+.container-img {
+  margin-bottom: 20px;
+}
+.container-sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+.container-suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.container-luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+.container-title {
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display";
+  margin-bottom: 25px;
+}
+.container-paragraph {
+  font-family: "Lexend Deca";
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 80px;
+}
+.container-btn {
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  padding: 15px 40px;
+  font-family: "Lexend Deca";
+  font-size: 13px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.container-btn:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.container-btn-sedans {
+  color: hsl(31, 77%, 52%);
+}
+.container-btn-suvs {
+  color: hsl(184, 100%, 22%);
+}
+.container-btn-luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+.container-btn-sedans:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+.container-btn-suvs:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+.container-btn-luxury:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    display: block;
+  }
+  .container-cols {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
