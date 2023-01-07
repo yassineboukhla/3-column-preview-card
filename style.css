@@ -11,12 +11,14 @@
   padding: 0px;
   box-sizing: border-box;
 }
+body {
+  height: 100%;
+}
 /*  I just earned about flexbox, and will try to use it in this
     project.
 */
 main {
-  min-height: 100vh;
-  min-width: 100vh;
+  min-height: 100%;
   background-color: var(--primary-color);
   display: flex;
   align-items: center;
