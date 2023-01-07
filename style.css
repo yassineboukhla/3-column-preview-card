@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --primary-color: hsl(0, 0%, 95%);
+  --orange-color: hsl(31, 77%, 52%);
+  --light-green-color: hsl(184, 100%, 22%);
+  --dark-green-color: hsl(179, 100%, 13%);
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -10,7 +17,7 @@
 main {
   min-height: 100vh;
   min-width: 100vh;
-  background-color: hsl(0, 0%, 95%);
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,58 +38,60 @@ main {
   margin-bottom: 20px;
 }
 .container-sedans {
-  background-color: hsl(31, 77%, 52%);
+  background-color: var(--orange-color);
 }
 .container-suvs {
-  background-color: hsl(184, 100%, 22%);
+  background-color: var(--light-green-color);
 }
 .container-luxury {
-  background-color: hsl(179, 100%, 13%);
+  background-color: var(--dark-green-color);
 }
 .container-title {
-  color: hsl(0, 0%, 95%);
+  color: var(--primary-color);
   text-transform: uppercase;
   font-family: "Big Shoulders Display";
+  font-size: 30px;
   margin-bottom: 25px;
 }
 .container-paragraph {
-  font-family: "Lexend Deca";
+  font-family: "Lexend Deca" 400;
   color: hsla(0, 0%, 100%, 0.75);
   margin-bottom: 80px;
 }
-.container-btn {
-  background-color: hsl(0, 0%, 95%);
+.container-link {
+  background-color: var(--primary-color);
   border: none;
   padding: 15px 40px;
   font-family: "Lexend Deca";
-  font-size: 13px;
+  font-size: 14px;
   border-radius: 30px;
   cursor: pointer;
+  text-decoration: none;
 }
-.container-btn:hover {
-  border: 2px solid hsl(0, 0%, 95%);
+.container-link:hover {
+  border: 1px solid var(--primary-color);
 }
-.container-btn-sedans {
-  color: hsl(31, 77%, 52%);
+.container-link-sedans {
+  color: var(--orange-color);
 }
-.container-btn-suvs {
-  color: hsl(184, 100%, 22%);
+.container-link-suvs {
+  color: var(--light-green-color);
 }
-.container-btn-luxury {
-  color: hsl(179, 100%, 13%);
+.container-link-luxury {
+  color: var(--dark-green-color);
 }
 
-.container-btn-sedans:hover {
-  background-color: hsl(31, 77%, 52%);
-  color: hsl(0, 0%, 95%);
+.container-link-sedans:hover {
+  background-color: var(--orange-color);
+  color: var(--primary-color);
 }
-.container-btn-suvs:hover {
-  background-color: hsl(184, 100%, 22%);
-  color: hsl(0, 0%, 95%);
+.container-link-suvs:hover {
+  background-color: var(--light-green-color);
+  color: var(--primary-color);
 }
-.container-btn-luxury:hover {
-  background-color: hsl(179, 100%, 13%);
-  color: hsl(0, 0%, 95%);
+.container-link-luxury:hover {
+  background-color: var(--dark-green-color);
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 900px) {
